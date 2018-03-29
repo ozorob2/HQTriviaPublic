@@ -64,8 +64,8 @@ for token in tokens:
 for q in clean_tokens:
     question += q + " "
 
-#if "Which" or "What" in question:
-#    question += " " +  answers[0] + " or " + answers[1] + " or " + answers[2]
+if "Which" or "What" in question:
+    question += " " +  answers[0] + " or " + answers[1] + " or " + answers[2]
 
 question = question.replace("NOT", " ")
 
